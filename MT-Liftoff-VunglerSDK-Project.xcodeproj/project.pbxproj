@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		341192292B62C4B0006F908B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341192282B62C4B0006F908B /* AppDelegate.swift */; };
 		3411922B2B62C4B0006F908B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3411922A2B62C4B0006F908B /* SceneDelegate.swift */; };
-		3411922D2B62C4B0006F908B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3411922C2B62C4B0006F908B /* ViewController.swift */; };
 		341192302B62C4B0006F908B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3411922E2B62C4B0006F908B /* Main.storyboard */; };
 		341192322B62C4B1006F908B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 341192312B62C4B1006F908B /* Assets.xcassets */; };
 		341192352B62C4B1006F908B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 341192332B62C4B1006F908B /* LaunchScreen.storyboard */; };
+		341192422B632F8D006F908B /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341192412B632F8D006F908B /* Keys.swift */; };
+		341192442B633D4C006F908B /* CardSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341192432B633D4C006F908B /* CardSelectionVC.swift */; };
+		341192462B634582006F908B /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341192452B634582006F908B /* RoundedButton.swift */; };
+		341192482B634CBC006F908B /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341192472B634CBC006F908B /* Card.swift */; };
+		3411924A2B635160006F908B /* RulesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341192492B635160006F908B /* RulesVC.swift */; };
+		F89A1171CCECEA889D8EAE36 /* Pods_MT_Liftoff_VunglerSDK_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B4A853A00DB0C38AC1A839 /* Pods_MT_Liftoff_VunglerSDK_Project.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04C8E4DE33F5CB2EBD71482B /* Pods-MT-Liftoff-VunglerSDK-Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MT-Liftoff-VunglerSDK-Project.debug.xcconfig"; path = "Target Support Files/Pods-MT-Liftoff-VunglerSDK-Project/Pods-MT-Liftoff-VunglerSDK-Project.debug.xcconfig"; sourceTree = "<group>"; };
+		17B4A853A00DB0C38AC1A839 /* Pods_MT_Liftoff_VunglerSDK_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MT_Liftoff_VunglerSDK_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		341192252B62C4B0006F908B /* MT-Liftoff-VunglerSDK-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MT-Liftoff-VunglerSDK-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		341192282B62C4B0006F908B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3411922A2B62C4B0006F908B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3411922C2B62C4B0006F908B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3411922F2B62C4B0006F908B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		341192312B62C4B1006F908B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		341192342B62C4B1006F908B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		341192362B62C4B1006F908B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		341192412B632F8D006F908B /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		341192432B633D4C006F908B /* CardSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSelectionVC.swift; sourceTree = "<group>"; };
+		341192452B634582006F908B /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		341192472B634CBC006F908B /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		341192492B635160006F908B /* RulesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesVC.swift; sourceTree = "<group>"; };
+		BB7E4D8CBE74C613A5AD7EDA /* Pods-MT-Liftoff-VunglerSDK-Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MT-Liftoff-VunglerSDK-Project.release.xcconfig"; path = "Target Support Files/Pods-MT-Liftoff-VunglerSDK-Project/Pods-MT-Liftoff-VunglerSDK-Project.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F89A1171CCECEA889D8EAE36 /* Pods_MT_Liftoff_VunglerSDK_Project.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +55,8 @@
 			children = (
 				341192272B62C4B0006F908B /* MT-Liftoff-VunglerSDK-Project */,
 				341192262B62C4B0006F908B /* Products */,
+				7DE4EC91AFF6A8B9CB79B72B /* Pods */,
+				F6E33BFA9FBCF74344643FC2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +73,58 @@
 			children = (
 				341192282B62C4B0006F908B /* AppDelegate.swift */,
 				3411922A2B62C4B0006F908B /* SceneDelegate.swift */,
-				3411922C2B62C4B0006F908B /* ViewController.swift */,
-				3411922E2B62C4B0006F908B /* Main.storyboard */,
+				3411923C2B6307BB006F908B /* Model */,
+				3411923D2B6307C3006F908B /* View */,
+				3411923E2B6307CC006F908B /* Controller */,
 				341192312B62C4B1006F908B /* Assets.xcassets */,
-				341192332B62C4B1006F908B /* LaunchScreen.storyboard */,
 				341192362B62C4B1006F908B /* Info.plist */,
 			);
 			path = "MT-Liftoff-VunglerSDK-Project";
+			sourceTree = "<group>";
+		};
+		3411923C2B6307BB006F908B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				341192412B632F8D006F908B /* Keys.swift */,
+				341192472B634CBC006F908B /* Card.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3411923D2B6307C3006F908B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3411922E2B62C4B0006F908B /* Main.storyboard */,
+				341192332B62C4B1006F908B /* LaunchScreen.storyboard */,
+				341192452B634582006F908B /* RoundedButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3411923E2B6307CC006F908B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				341192432B633D4C006F908B /* CardSelectionVC.swift */,
+				341192492B635160006F908B /* RulesVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7DE4EC91AFF6A8B9CB79B72B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				04C8E4DE33F5CB2EBD71482B /* Pods-MT-Liftoff-VunglerSDK-Project.debug.xcconfig */,
+				BB7E4D8CBE74C613A5AD7EDA /* Pods-MT-Liftoff-VunglerSDK-Project.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F6E33BFA9FBCF74344643FC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17B4A853A00DB0C38AC1A839 /* Pods_MT_Liftoff_VunglerSDK_Project.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +134,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 341192392B62C4B1006F908B /* Build configuration list for PBXNativeTarget "MT-Liftoff-VunglerSDK-Project" */;
 			buildPhases = (
+				E127A4313275BE0007D25D8E /* [CP] Check Pods Manifest.lock */,
 				341192212B62C4B0006F908B /* Sources */,
 				341192222B62C4B0006F908B /* Frameworks */,
 				341192232B62C4B0006F908B /* Resources */,
@@ -133,13 +194,42 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E127A4313275BE0007D25D8E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MT-Liftoff-VunglerSDK-Project-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		341192212B62C4B0006F908B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3411922D2B62C4B0006F908B /* ViewController.swift in Sources */,
+				341192462B634582006F908B /* RoundedButton.swift in Sources */,
+				341192482B634CBC006F908B /* Card.swift in Sources */,
+				341192422B632F8D006F908B /* Keys.swift in Sources */,
 				341192292B62C4B0006F908B /* AppDelegate.swift in Sources */,
+				341192442B633D4C006F908B /* CardSelectionVC.swift in Sources */,
+				3411924A2B635160006F908B /* RulesVC.swift in Sources */,
 				3411922B2B62C4B0006F908B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +377,7 @@
 		};
 		3411923A2B62C4B1006F908B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04C8E4DE33F5CB2EBD71482B /* Pods-MT-Liftoff-VunglerSDK-Project.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,6 +386,8 @@
 				DEVELOPMENT_TEAM = J5P95JSAVD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "MT-Liftoff-VunglerSDK-Project/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Deliver best ad experience";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -315,6 +408,7 @@
 		};
 		3411923B2B62C4B1006F908B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB7E4D8CBE74C613A5AD7EDA /* Pods-MT-Liftoff-VunglerSDK-Project.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -323,6 +417,8 @@
 				DEVELOPMENT_TEAM = J5P95JSAVD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "MT-Liftoff-VunglerSDK-Project/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Deliver best ad experience";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

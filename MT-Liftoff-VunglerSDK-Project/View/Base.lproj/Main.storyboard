@@ -1,24 +1,146 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Card SelectionVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CardSelectionVC" customModule="MT_Liftoff_VunglerSDK_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AS" translatesAutoresizingMaskIntoConstraints="NO" id="bLR-Xb-blz">
+                                <rect key="frame" x="71.666666666666686" y="176" width="250" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="54W-tA-Zpr"/>
+                                    <constraint firstAttribute="height" constant="350" id="AP4-1c-1xr"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVO-cN-9UN" customClass="RoundedButton" customModule="MT_Liftoff_VunglerSDK_Project" customModuleProvider="target">
+                                <rect key="frame" x="66.666666666666686" y="576" width="260" height="50"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="htG-Va-VMJ"/>
+                                    <constraint firstAttribute="height" constant="50" id="qDR-wn-FL8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Stop!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="playAndStopButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ilV-jB-jfo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xzw-nT-TBi" customClass="RoundedButton" customModule="MT_Liftoff_VunglerSDK_Project" customModuleProvider="target">
+                                <rect key="frame" x="66.666666666666686" y="636" width="260" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="CL2-67-fKc"/>
+                                    <constraint firstAttribute="height" constant="50" id="Usb-ic-A1f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Rules">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="rulesButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tRS-Qb-JfJ"/>
+                                    <segue destination="cRX-jI-0Vy" kind="show" identifier="toRules" id="2ME-K3-bxT"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XVO-cN-9UN" firstAttribute="top" secondItem="bLR-Xb-blz" secondAttribute="bottom" constant="50" id="1Ny-Be-f8U"/>
+                            <constraint firstItem="xzw-nT-TBi" firstAttribute="top" secondItem="XVO-cN-9UN" secondAttribute="bottom" constant="10" id="6k9-5O-huD"/>
+                            <constraint firstItem="bLR-Xb-blz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-75" id="KpS-2w-O6J"/>
+                            <constraint firstItem="xzw-nT-TBi" firstAttribute="leading" secondItem="XVO-cN-9UN" secondAttribute="leading" id="LZR-Ys-fPQ"/>
+                            <constraint firstItem="bLR-Xb-blz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="clt-bn-hQO"/>
+                            <constraint firstItem="XVO-cN-9UN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gNW-N2-Plo"/>
+                            <constraint firstItem="xzw-nT-TBi" firstAttribute="trailing" secondItem="XVO-cN-9UN" secondAttribute="trailing" id="jUf-pS-trZ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cardImageView" destination="bLR-Xb-blz" id="XOA-Wg-cXS"/>
+                        <outlet property="playAndStopButton" destination="XVO-cN-9UN" id="1V2-7t-VZ5"/>
+                        <outlet property="rulesButton" destination="xzw-nT-TBi" id="3YC-pg-dTh"/>
+                        <outletCollection property="buttons" destination="XVO-cN-9UN" collectionClass="NSMutableArray" id="4GM-yO-HxY"/>
+                        <outletCollection property="buttons" destination="xzw-nT-TBi" collectionClass="NSMutableArray" id="ejG-SK-6nS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140" y="-2"/>
+        </scene>
+        <!--RulesVC-->
+        <scene sceneID="8z8-J4-8Nd">
+            <objects>
+                <viewController id="cRX-jI-0Vy" customClass="RulesVC" customModule="MT_Liftoff_VunglerSDK_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jba-oh-rMA">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rules" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBC-cC-A7P">
+                                <rect key="frame" x="30" y="70" width="333" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The value of each card represents the number of each exercise you do.  J = 11, Q = 12, K = 13, A = 14" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dld-hj-jR8">
+                                <rect key="frame" x="30" y="153" width="333" height="86"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="♠️ = Push-ups  ❤️ = Sit-ups  ♣️ = Burpees  ♦️ = Jumping Jacks" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6E-xa-pJt">
+                                <rect key="frame" x="96.666666666666686" y="314" width="200" height="175.66666666666663"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Njo-l0-PPY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xjf-vx-rRn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fBC-cC-A7P" firstAttribute="leading" secondItem="xjf-vx-rRn" secondAttribute="leading" constant="30" id="4rK-Xr-FMD"/>
+                            <constraint firstItem="L6E-xa-pJt" firstAttribute="top" secondItem="Dld-hj-jR8" secondAttribute="bottom" constant="75" id="9We-Hf-zVX"/>
+                            <constraint firstItem="xjf-vx-rRn" firstAttribute="trailing" secondItem="Dld-hj-jR8" secondAttribute="trailing" constant="30" id="X2h-fG-uOn"/>
+                            <constraint firstItem="Dld-hj-jR8" firstAttribute="leading" secondItem="xjf-vx-rRn" secondAttribute="leading" constant="30" id="YJo-Xf-hW8"/>
+                            <constraint firstItem="xjf-vx-rRn" firstAttribute="trailing" secondItem="fBC-cC-A7P" secondAttribute="trailing" constant="30" id="dPF-Sj-RjR"/>
+                            <constraint firstItem="Dld-hj-jR8" firstAttribute="top" secondItem="fBC-cC-A7P" secondAttribute="bottom" constant="35" id="jgU-NZ-ocI"/>
+                            <constraint firstItem="L6E-xa-pJt" firstAttribute="centerX" secondItem="Jba-oh-rMA" secondAttribute="centerX" id="nSa-TT-ait"/>
+                            <constraint firstItem="fBC-cC-A7P" firstAttribute="top" secondItem="xjf-vx-rRn" secondAttribute="top" constant="70" id="qmp-fz-FRi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="GHS-Gf-eZ4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vVs-hN-f1A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="981" y="-2"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AS" width="691" height="1056"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
